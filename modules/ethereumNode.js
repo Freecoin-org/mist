@@ -458,7 +458,6 @@ class EthereumNode extends EventEmitter {
                 // when proc outputs data
                 proc.stdout.on('data', (data) => {
                     ethereumNodeLog.trace('Got stdout data');
-                    console.log('∆∆∆ proc emitting data', data);
 
                     this.emit('data', data);
 
